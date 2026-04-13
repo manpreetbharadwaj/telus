@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
-  View,
-  Text,
-  TextInput,
-  Button,
   Alert,
-  StyleSheet,
-  TouchableOpacity,
+  Button,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
-import { useCows } from '../context/CowContext';
-import { uuid } from '../utils/helpers';
 import CommonHeader from '../components/CommonHeader';
+import { useCows } from '../context/CowContext';
 import { CowStatus } from '../models/Cow';
+import { uuid } from '../utils/helpers';
 
 export default function AddCowScreen({ navigation }: any) {
   const { cows, addCow } = useCows();

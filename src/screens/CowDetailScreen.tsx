@@ -1,5 +1,4 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 import CommonHeader from '../components/CommonHeader';
 
 export default function CowDetailScreen({ route }: any) {
